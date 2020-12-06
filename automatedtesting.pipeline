@@ -2,13 +2,17 @@
 pipeline {
     agent any
     
-    stage('Run integratie test') {
+    
+  
+    stages {
+      
+      stage('Run integratie test') {
           steps{
             sh "rm -rf ./*"
           }
         }
-  
-    stages {
+    
+    
         stage ('Fetch code'){
             steps{
                 

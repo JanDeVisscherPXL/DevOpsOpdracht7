@@ -5,7 +5,18 @@ pipeline {
     stages {
         stage ('Fetch code'){
             steps{
-                git 'https://github.com/JanDeVisscherPXL/DevOpsOpdracht7.git'
+                
+                
+                heckout([  
+            $class: 'GitSCM', 
+            branches: [[name: 'refs/heads/main']], 
+            doGenerateSubmoduleConfigurations: false, 
+            
+            submoduleCfg: [], 
+            userRemoteConfigs: [[credentialsId: 'git', url: 'https://github.com/JanDeVisscherPXL/DevOpsOpdracht7.git']]
+        ])
+                
+                
             }
         }
     }

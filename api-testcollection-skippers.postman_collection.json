@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "b4a2072b-63c3-4858-8a56-4965ac247dec",
+		"name": "api-testcollection-skippers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://api.dubbadub.be/api/students/5fccdc10360c8b0012c16add",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "key",
+						"value": "2TINDEVOPS",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://api.dubbadub.be/api/students/5fccdc10360c8b0012c16add",
+					"protocol": "http",
+					"host": [
+						"api",
+						"dubbadub",
+						"be"
+					],
+					"path": [
+						"api",
+						"students",
+						"5fccdc10360c8b0012c16add"
+					]
+				},
+				"description": "Opvraging student die eerder was toegevoegd met postman via id."
+			},
+			"response": []
+		},
+		{
+			"name": "http://api.dubbadub.be/api/students",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "key",
+						"value": "2TINDEVOPS",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://api.dubbadub.be/api/students",
+					"protocol": "http",
+					"host": [
+						"api",
+						"dubbadub",
+						"be"
+					],
+					"path": [
+						"api",
+						"students"
+					]
+				},
+				"description": "Opvraging lijst alle studenten."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

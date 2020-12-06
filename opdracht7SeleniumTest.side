@@ -1,0 +1,142 @@
+{
+  "id": "9fbc28d4-23c9-4460-9e3d-45076d6ff2f6",
+  "version": "2.0",
+  "name": "opdracht7",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "d378204b-266c-4f39-80d0-92ef642f0c08",
+    "name": "AppHasButton",
+    "commands": [{
+      "id": "3a886f17-616e-443e-baf2-98c1210f8a92",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e751593-9b8a-41de-8643-99fa05b29248",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1123x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f2e482f-cca2-4b2a-91de-ee5e0a56a634",
+      "comment": "",
+      "command": "click",
+      "target": "name=add",
+      "targets": [
+        ["name=add", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='add']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "28982ea3-31d0-4217-8b8d-b76059a28acc",
+    "name": "AppCanAdd",
+    "commands": [{
+      "id": "7b030ee8-eac1-46fc-a07e-fdc957799b83",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b15d02ba-711a-4b9c-887b-6b5a1462476d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1123x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb37d48a-305d-4fbe-be62-b6e144e402d8",
+      "comment": "",
+      "command": "click",
+      "target": "id=number1",
+      "targets": [
+        ["id=number1", "id"],
+        ["name=number1", "name"],
+        ["css=#number1", "css:finder"],
+        ["xpath=//input[@id='number1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e88fe33-f004-40d6-a1ef-2f356049a3eb",
+      "comment": "",
+      "command": "type",
+      "target": "id=number1",
+      "targets": [
+        ["id=number1", "id"],
+        ["name=number1", "name"],
+        ["css=#number1", "css:finder"],
+        ["xpath=//input[@id='number1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "82daf85c-9beb-4d67-8bb5-fd8ec7b6bd22",
+      "comment": "",
+      "command": "click",
+      "target": "id=number2",
+      "targets": [
+        ["id=number2", "id"],
+        ["name=number2", "name"],
+        ["css=#number2", "css:finder"],
+        ["xpath=//input[@id='number2']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2f3fb8f-221a-4b2c-8975-79b23f36e470",
+      "comment": "",
+      "command": "type",
+      "target": "id=number2",
+      "targets": [
+        ["id=number2", "id"],
+        ["name=number2", "name"],
+        ["css=#number2", "css:finder"],
+        ["xpath=//input[@id='number2']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "54517e25-cde4-4247-a8d0-c78e3fa14dcc",
+      "comment": "",
+      "command": "click",
+      "target": "name=add",
+      "targets": [
+        ["name=add", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='add']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "26eb6f23-4895-4d9f-9960-e0a5e31e5a1c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'The result of adding 5 and 4 is 9')]", "xpath:innerText"]
+      ],
+      "value": "The result of adding 5 and 4 is 9"
+    }]
+  }],
+  "suites": [{
+    "id": "625f7d91-d3cf-4c43-9faf-7a2a79fe8070",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}

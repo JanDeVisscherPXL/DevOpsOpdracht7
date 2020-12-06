@@ -89,6 +89,13 @@
         ["xpath=//h2[contains(.,'The result of adding 5 and 4 is 9')]", "xpath:innerText"]
       ],
       "value": "The result of adding 5 and 4 is 9"
+    }, {
+      "id": "fda446fb-84ba-4235-975f-0795cec78e04",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "69f81d15-f588-4cb1-aa71-45c96b207789",
@@ -112,6 +119,13 @@
         ["xpath=//button", "xpath:position"],
         ["xpath=//button[contains(.,'Add')]", "xpath:innerText"]
       ],
+      "value": ""
+    }, {
+      "id": "741c1ee1-da14-488e-98ff-8edbf418ec5d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
       "value": ""
     }]
   }],

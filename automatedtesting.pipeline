@@ -43,7 +43,8 @@ pipeline {
         
         stage('Archive artifact') {
           steps{
-            echo "implementeer dit"
+            sh "zip -r Opdracht7Reports.zip newman seleniumReports"
+            archiveArtifacts 'Opdracht7Reports.zip'
           }
         }
         

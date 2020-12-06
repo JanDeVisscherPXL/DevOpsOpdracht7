@@ -24,7 +24,12 @@ pipeline {
         
         stage('Run e2e test'){
           steps{
-              sh 'selenium-side-runner opdracht7SeleniumTest.side'
+              nodejs('node-selenium') {
+                sh "npm -v"
+                sh "selenium-side-runner -c \"goog:chromeOptions.arg=[disable-infobars, headless] browserName=chrome\" --output-directory=seleniumReports --output-format=junit *.side"
+                sh "ls -lah ."
+              
+              }
           }
         }
         

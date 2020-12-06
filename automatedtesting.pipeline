@@ -3,9 +3,9 @@ pipeline {
     agent any
   
     stages {
-        stage ('cleanup'){
+        stage ('Fetch code'){
             steps{
-                echo 'test'
+                git 'https://github.com/JanDeVisscherPXL/DevOpsOpdracht7.git'
             }
         }
     }

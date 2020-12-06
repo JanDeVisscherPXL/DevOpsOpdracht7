@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage ('Fetch code'){
             steps{
-                git 'https://github.com/JanDeVisscherPXL/DevOpsOpdracht7'
+                git 'https://github.com/JanDeVisscherPXL/DevOpsOpdracht7.git'
             }
         }
     }

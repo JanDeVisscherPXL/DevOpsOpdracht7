@@ -36,7 +36,7 @@ pipeline {
         
         stage('Run integratie test') {
           steps{
-            echo "implementeer dit"
+            sh "newman run api-testcollection-skippers.postman_collection.json -r cli,junit"
           }
         }
         

@@ -26,7 +26,7 @@ pipeline {
           steps{
               nodejs('node-selenium') {
                 sh "npm -v"
-                sh "selenium-side-runner -c \"goog:chromeOptions.arg=[disable-infobars, headless] browserName=chrome\" --output-directory=seleniumReports --output-format=junit *.side"
+                sh "selenium-side-runner -c \"goog:chromeOptions.arg=[disable-infobars, headless] browserName=chrome\" --output-format=junit *.side"
                 sh "ls -lah ."
               
               }

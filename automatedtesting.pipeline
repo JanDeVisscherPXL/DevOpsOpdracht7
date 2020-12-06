@@ -34,5 +34,18 @@ pipeline {
         }
         
         
+        stage('Run integratie test') {
+          steps{
+            echo "implementeer dit"
+          }
+        }
+        
+        
+        stage('Archive artifact') {
+          steps{
+            echo "implementeer dit"
+          }
+        }
+        
     }
 }

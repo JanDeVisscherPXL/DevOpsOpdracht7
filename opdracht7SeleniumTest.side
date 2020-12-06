@@ -1,58 +1,20 @@
 {
-  "id": "9fbc28d4-23c9-4460-9e3d-45076d6ff2f6",
+  "id": "7104b4b8-7d2b-4826-a3ab-d882d553ce5e",
   "version": "2.0",
-  "name": "opdracht7",
+  "name": "App-tests",
   "url": "http://localhost",
   "tests": [{
-    "id": "d378204b-266c-4f39-80d0-92ef642f0c08",
-    "name": "AppHasButton",
-    "commands": [{
-      "id": "3a886f17-616e-443e-baf2-98c1210f8a92",
-      "comment": "",
-      "command": "open",
-      "target": "/",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "8e751593-9b8a-41de-8643-99fa05b29248",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1123x692",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "8f2e482f-cca2-4b2a-91de-ee5e0a56a634",
-      "comment": "",
-      "command": "click",
-      "target": "name=add",
-      "targets": [
-        ["name=add", "name"],
-        ["css=.btn", "css:finder"],
-        ["xpath=//button[@name='add']", "xpath:attributes"],
-        ["xpath=//button", "xpath:position"],
-        ["xpath=//button[contains(.,'Add')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }]
-  }, {
-    "id": "28982ea3-31d0-4217-8b8d-b76059a28acc",
+    "id": "edfde74e-591d-4d44-9535-f03866508a95",
     "name": "AppCanAdd",
     "commands": [{
-      "id": "7b030ee8-eac1-46fc-a07e-fdc957799b83",
+      "id": "5ba1d89f-9c5b-459a-8d1a-671f9bea3e39",
       "comment": "",
       "command": "open",
       "target": "/",
       "targets": [],
       "value": ""
     }, {
-      "id": "b15d02ba-711a-4b9c-887b-6b5a1462476d",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1123x692",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "eb37d48a-305d-4fbe-be62-b6e144e402d8",
+      "id": "94eadcb3-df6a-43cb-b859-3786ffaacb28",
       "comment": "",
       "command": "click",
       "target": "id=number1",
@@ -65,7 +27,7 @@
       ],
       "value": ""
     }, {
-      "id": "2e88fe33-f004-40d6-a1ef-2f356049a3eb",
+      "id": "9afdb96a-2b17-4515-a0cc-3d406162701b",
       "comment": "",
       "command": "type",
       "target": "id=number1",
@@ -78,7 +40,7 @@
       ],
       "value": "5"
     }, {
-      "id": "82daf85c-9beb-4d67-8bb5-fd8ec7b6bd22",
+      "id": "d1d4dbfe-e080-477c-9505-e8b8f09b5e46",
       "comment": "",
       "command": "click",
       "target": "id=number2",
@@ -91,7 +53,7 @@
       ],
       "value": ""
     }, {
-      "id": "e2f3fb8f-221a-4b2c-8975-79b23f36e470",
+      "id": "a2d4a9a5-fe95-49bf-b21d-063915e0a5ae",
       "comment": "",
       "command": "type",
       "target": "id=number2",
@@ -104,7 +66,7 @@
       ],
       "value": "4"
     }, {
-      "id": "54517e25-cde4-4247-a8d0-c78e3fa14dcc",
+      "id": "7aaea4bc-83a5-42d3-a9e9-3f7866b658d0",
       "comment": "",
       "command": "click",
       "target": "name=add",
@@ -117,7 +79,7 @@
       ],
       "value": ""
     }, {
-      "id": "26eb6f23-4895-4d9f-9960-e0a5e31e5a1c",
+      "id": "20e750c5-0691-4d2b-8143-92737ccb0737",
       "comment": "",
       "command": "assertText",
       "target": "css=h2",
@@ -128,14 +90,38 @@
       ],
       "value": "The result of adding 5 and 4 is 9"
     }]
+  }, {
+    "id": "69f81d15-f588-4cb1-aa71-45c96b207789",
+    "name": "AppHasButton",
+    "commands": [{
+      "id": "c2b9ca8c-052f-43c7-a95e-283697787deb",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a8287d9-cb35-4fbe-bb2a-9baff135043f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=add",
+      "targets": [
+        ["name=add", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='add']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
-    "id": "625f7d91-d3cf-4c43-9faf-7a2a79fe8070",
-    "name": "Default Suite",
+    "id": "512ac5a4-c3b5-4141-ad28-d931812c2a19",
+    "name": "App Tests",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": []
+    "tests": ["69f81d15-f588-4cb1-aa71-45c96b207789", "edfde74e-591d-4d44-9535-f03866508a95"]
   }],
   "urls": ["http://localhost/"],
   "plugins": []
